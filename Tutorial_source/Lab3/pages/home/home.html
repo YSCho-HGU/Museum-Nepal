@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-navbar hideBackButton="true">
+    <div >
+        <img align="right" src="assets/img/search.png" class="search" (click)="gotoSearch()"/>        
+        <!--<ion-title class="title"> IMM </ion-title>-->
+        <p class="title">IMM</p>
+    </div>
+    </ion-navbar>
+</ion-header>
+
+<ion-content style = "background-color:#FFF;">
+    <ion-grid class="grid">
+        <ion-row><!-- first row -->
+            <ion-slides initialSlide=0 speed="500" loop="true" pager="true">
+                <ion-slide *ngFor="let img_list of main_img">
+                        <img src="{{img_list.img_path}}" class="slider-img">
+                </ion-slide>
+            </ion-slides>
+        </ion-row>
+        <!-- second-row -->
+        <ion-row >
+            <div style="width: 100%; vertical-align: middle;">
+                <p>{{'International Mountain Museum' | translate}}</p>
+            </div>
+        </ion-row>
+        <div>
+        <ion-row class="categories">
+
+            <ion-col (click)="navAbout()">
+                    <img src="assets\\img\\about-02.png"/>
+                    <figcaption> About Museum </figcaption>
+            </ion-col>
+            <ion-col (click)="navExhibition()">
+                    <img src="assets\\img\\Exhibition-02.png"/>
+                    <figcaption> Exhibition </figcaption>
+            </ion-col>
+        </ion-row>
+        <ion-row class="categories">
+            <ion-col (click)="navMap()">
+                    <img src="assets\\img\\Map-02.png"/>
+                    <figcaption>Map</figcaption>
+            </ion-col>
+            <ion-col (click)="navFacility()">
+                    <img src="assets\\img\\Facilities-02.png"/>
+                    <figcaption> Facilities </figcaption>
+            </ion-col>
+        </ion-row>
+        </div>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+    <div >
+        <img align="right" src="assets/img/search.png" class="search" (click)="gotoSearch()"/>        
+        <!--<ion-title class="title"> IMM </ion-title>-->
+        <p class="title">IMM</p>
+    </div>
+    </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+
+<p class="list-header"> Facilities </p>
+<ion-list no-lines>
+  <button ion-item (click)="gotoDetail(facility_list.facilities)" *ngFor="let facility_list of facility">
+       {{facility_list.facilities}}
+  </button>
+</ion-list>
+</ion-content>

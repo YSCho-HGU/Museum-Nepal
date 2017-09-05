@@ -1,0 +1,68 @@
+page-news {
+  .title{
+    margin:0 auto;
+    font-family: "notoR";
+    margin:0 auto;
+    text-align:justify;
+    color:white;
+    font-size:3.3vh;
+    padding-left:30% !important;
+    
+  }
+
+ion-navbar.toolbar{
+  min-height: 48px !important;
+  padding-right: 10px;
+}
+
+
+.search{
+  width:7%;
+  margin-right:10px;
+}
+
+
+ .md .search{
+      width: 7%;
+    
+ } 
+
+  .ios .search{
+      width:7%;
+    
+  }
+  .item-block {
+    align-items: flex-start !important;
+  }
+  ion-label {
+    white-space: initial !important;
+  }
+  ion-thumbnail, ion-item{
+    margin: 0px !important;
+    padding:0px !important;
+  }
+  .thumbnail-img{
+    padding:0px !important;
+    margin:0px !important;
+    height:97px !important;
+    width:142px !important;
+  } 
+  .list-content{
+    margin-left: 13px;
+    margin-top: 3px;
+    font-family:"notoR";
+  }
+  .h2{
+    font-family: "notoR";
+    margin-bottom:8px !important;
+    color:#1C49AD !important;
+    font-size:12pt;
+  }
+
+  .exhibition-name{
+    font-family: "notoB";
+    font-size:14pt;
+    color:black;
+    line-height: 1;    //줄간격
+  }
+}

@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+    <div >
+        <img align="right" src="assets/img/search.png" class="search" (click)="gotoSearch()"/>        
+        <!--<ion-title class="title"> IMM </ion-title>-->
+        <p class="title">IMM</p>
+    </div>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item (click)="gotoCategory(exhibitions.exhibit_id)" *ngFor="let exhibitions of exhibit_list">
+            <ion-thumbnail item-left>
+                <img class="thumbnail-img" src="{{exhibitions.exhibit_img}}">
+            </ion-thumbnail>
+            <div class ="list-content">
+            <p class ="h2">{{exhibitions.exhibit_loc}} <br> </p>
+            <p class="exhibition-name"> Hall of <br> </p>            
+            <p class="exhibition-name">{{exhibitions.exhibit_name}} <br> </p>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>

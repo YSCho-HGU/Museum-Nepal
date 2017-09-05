@@ -1,0 +1,82 @@
+page-home {
+  
+  .title{
+    margin:0 auto;
+    font-family: "notoR";
+    margin:0 auto;
+    text-align:center;
+    color:white;
+    font-size:3.3vh;
+    padding-left:20px;
+  }
+
+ion-navbar.toolbar{
+  min-height: 48px !important;
+  padding-right: 10px;
+}
+
+
+.search{
+  width:6.5%;
+  margin-right:10px;
+}
+  
+  /*slider*/
+
+  .grid {
+    padding: 0px;
+    p{
+      font-size: 16pt;
+      font-family: "notoB";
+      text-align: center; 
+      color: #1C49AD;
+      font-weight : bold;
+      line-height: 0.8;
+    }
+    .slides {
+      .overlay {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+        display: inline-flex;
+      }
+      .slider-img {
+        height: 229px;
+        width: 100%;
+        position: relative;
+        z-index: -111;
+      }
+      .swiper-pagination-bullet {
+        background: $primary !important;
+      }
+    }
+
+    /*Categories*/
+    .categories {
+      ion-col{
+        background-color: #F4F4F4;
+        border : solid white;
+        border-width:1.5px;
+      }
+      img {
+        height: 82px;
+        position: relative;
+        z-index: 1;
+        width: auto;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:15px;
+        margin-bottom:10px;
+        padding-top:5px;
+      }
+      figcaption{
+        margin-top:15px;
+        margin-bottom:20px;
+        font-size:15px;
+        text-align:center;
+        color: #1C49AD;
+        font-family: "notoB";
+      }
+    }
+  }
+
+}

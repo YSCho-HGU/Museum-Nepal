@@ -1,0 +1,81 @@
+page-facility-detail {
+  .title{
+    margin:0 auto;
+    font-family: "notoR";
+    margin:0 auto;
+    text-align:justify;
+    color:white;
+    font-size:3.3vh;
+    padding-left:30% !important;
+    
+  }
+
+ion-navbar.toolbar{
+  min-height: 48px !important;
+  padding-right: 10px;
+}
+
+
+.search{
+  width:7%;
+  margin-right:10px;
+}
+
+
+ .md .search{
+      width: 7%;
+ } 
+
+  .ios .search{
+      width:7%;
+  }
+
+  .card-img {
+    height: 225px;
+    width: 100%;
+    position: absolute;
+    z-index: -111;
+    padding:0px;
+    margin:0px;
+  }
+  .card-title {
+    font-family: "notoB";
+    position: relative;
+    top: 27.5%;
+    font-size: 20.5pt;
+    line-height:1;
+    width: 60%;
+    color:white;
+    left: 21.5px;
+  }
+
+  .content{
+  padding:0x;
+  margin:0x;
+}
+
+  .facility-list{
+      font-size:9pt;
+      position:relative;
+      top:200px;
+      left:15px;
+
+      color: #1C49AD;
+  }
+
+
+ ion-col{
+     padding-top:2px !important;
+     padding-bottom:0px !important;
+ }
+ .info-list{
+     margin-top:5px !important;
+     margin-bottom:5px !important;
+     font-family: "notoB";
+ }
+ .content-list{
+     font-family:"notoR";
+     margin-top:5px !important;
+     margin-bottom:5px !important;
+ }
+}

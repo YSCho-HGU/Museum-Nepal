@@ -1,0 +1,73 @@
+page-about-us {
+  .title{
+    margin:0 auto;
+    font-family: "notoR";
+    margin:0 auto;
+    text-align:justify;
+    color:white;
+    font-size:3.3vh;
+    padding-left:30% !important;
+    
+  }
+
+ion-navbar.toolbar{
+  min-height: 48px !important;
+  padding-right: 10px;
+}
+
+
+.search{
+  width:7%;
+  margin-right:10px;
+}
+
+
+ .md .search{
+      width: 7%;
+    
+ } 
+
+  .ios .search{
+      width:7%;
+    
+  }
+
+
+  //<p>태그 색 지정 지워준다. -> 검정색으로
+
+  .card-img {
+    height: 225px;
+    width: 100%;
+    position: relative;
+    z-index: -111;
+    padding:0px;
+    margin:0px;
+  }
+  .card-title {
+    font-family: "notoB";
+    position: absolute;
+    top: 28%;
+    font-size: 20.5pt;
+    width: 100%;
+    color:white;
+    left: 21.5px;
+  }
+  .heading {
+    color: #6d6d6d;
+    padding-left: 10px;
+  }
+
+.content{
+  padding:0x;
+  margin:0x;
+}
+
+  .details {
+    font-family: "notoR";
+    font-size:9.5pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.3;    //줄간격
+    text-align: justify;  //양쪽 정렬
+  }
+}

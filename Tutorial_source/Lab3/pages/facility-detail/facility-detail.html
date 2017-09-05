@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+    <div >
+        <img align="right" src="assets/img/search.png" class="search" (click)="gotoSearch()"/>        
+        <!--<ion-title class="title"> IMM </ion-title>-->
+        <p class="title">IMM</p>
+    </div>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+    <img src="{{facility_img}}" class="card-img">
+       <div class="card-title">{{facilityType}}</div>
+
+
+<ion-grid class="facility-list">
+  <ion-row>
+    <ion-col col-5>
+      <p class="info-list" *ngFor = "let list of info_type">{{list}}</p>
+    </ion-col>
+    <ion-col>
+      <p class="content-list" *ngFor = "let list of info_content"> {{list}}</p>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+</ion-content>

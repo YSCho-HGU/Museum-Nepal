@@ -1,0 +1,75 @@
+<ion-header>
+    <ion-navbar>
+    <div>
+        <img align="right" src="assets/img/search.png" class="search" (click)="gotoSearch()"/>        
+        <!--<ion-title class="title"> IMM </ion-title>-->
+        <p class="title">IMM </p>
+    </div>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+ <div [ngSwitch]="mapView">
+      <img *ngSwitchCase="'SITE MAP'" src="{{site_img}}"/>
+      <img *ngSwitchCase="'UNDERGROUND'" src="{{basement_img}}"/> 
+      <img *ngSwitchCase="'GROUND'" src="{{ground_img}}"/>      
+</div>
+
+    <div>
+    <ion-segment [(ngModel)]="mapView" >
+      <ion-segment-button value="{{siteMap}}">
+        {{siteMap}}
+      </ion-segment-button>
+      <ion-segment-button value="{{underground}}">
+        {{basement}}
+      </ion-segment-button>
+      <ion-segment-button value="{{ground}}">
+        {{ground}}
+      </ion-segment-button>
+    </ion-segment>
+    </div>
+
+  <div [ngSwitch]="mapView">
+    
+    <ion-list *ngSwitchCase="'SITE MAP'" no-lines>
+        <ion-list-header no-lines>
+          Contact No.
+        </ion-list-header>
+        <div><button *ngFor="let info_list of site_contact_info" 
+              class="info-style">{{info_list.info}}</button></div>
+        <ion-list-header>
+          Entrance Fee
+        </ion-list-header>
+        <div><button *ngFor="let info_list of site_fee_info" 
+              class="info-style">{{info_list.info}}</button></div>
+      </ion-list>
+
+     <ion-list *ngSwitchCase="'UNDERGROUND'" no-lines>
+        <ion-list-header no-lines>
+          Hall
+        </ion-list-header>
+        <div><button *ngFor="let info_list of basement_hall_info" 
+              class="info-style">{{info_list.info}}</button></div>
+        <ion-list-header>
+          Others
+        </ion-list-header>
+        <div><button  *ngFor="let info_list of basement_others_info" 
+              class="info-style">{{info_list.info}}</button></div>
+      </ion-list>
+
+     <ion-list *ngSwitchCase="'GROUND'" no-lines>
+        <ion-list-header no-lines>
+          Hall
+        </ion-list-header>
+        <div><button *ngFor="let info_list of ground_hall_info" 
+              class="info-style">{{info_list.info}}</button></div>
+        <ion-list-header>
+          Facilities
+        </ion-list-header>
+        <div><button  *ngFor="let info_list of ground_facility_info" 
+              class="info-style">{{info_list.info}}</button></div>
+      </ion-list>
+
+</div>
+</ion-content>
