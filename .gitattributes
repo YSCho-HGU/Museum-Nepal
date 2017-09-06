@@ -1,3 +1,0 @@
-ionic*.zip filter=lfs diff=lfs merge=lfs -text
-*API.zip filter=lfs diff=lfs merge=lfs -text
-Tutorial_source/Lab3/ionic3API.zip filter=lfs diff=lfs merge=lfs -text
